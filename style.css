@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#ffc880;
+}
+.wrapper {
+    width: 550px;
+    height: 600px;
+    background: #fda634;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #39393976;
+    display: flex;
+    flex-direction: column;
+}
+.input_task {
+    width: inherit;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ffc880;
+}
+.input {
+    width: 80%;
+    height: 100%;
+    background: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 34px;
+    font-family: sans-serif;
+    color: #000;
+    outline: none;
+}
+.add {
+    width: 20%;
+    height: 100%;
+    background: none;
+    border: none;
+    font-size: 34px;
+    font-family: sans-serif;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0 10px 0 0;
+}
+.add:hover {
+    background-color: #ffc880;
+}
+.tasks {
+    width: inherit;
+    height: 85%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.item {
+    width: calc(inherit - 15px);
+    height: 60px;
+    border: 1px solid #ffc880;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 10px;
+    border-radius: 10px ;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #000;
+    box-sizing: border-box;
+}
+[data-del='del'] {
+    width: 10%;
+    height: inherit;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+[data-del='del']:hover {
+    background-color: #ffc880;
+}
